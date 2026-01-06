@@ -1,5 +1,59 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CodeBlocksDocker extends Struct.ComponentSchema {
+  collectionName: 'components_code_blocks_dockers';
+  info: {
+    displayName: 'Docker';
+    icon: 'code';
+  };
+  attributes: {
+    caption: Schema.Attribute.String;
+    Docker: Schema.Attribute.Text &
+      Schema.Attribute.CustomField<
+        'plugin::strapi-code-editor-custom-field.code-editor-text',
+        {
+          language: 'dockerfile';
+        }
+      >;
+  };
+}
+
+export interface CodeBlocksJavascript extends Struct.ComponentSchema {
+  collectionName: 'components_code_blocks_javascripts';
+  info: {
+    displayName: 'Javascript';
+    icon: 'code';
+  };
+  attributes: {
+    caption: Schema.Attribute.String;
+    javascript: Schema.Attribute.Text &
+      Schema.Attribute.CustomField<
+        'plugin::strapi-code-editor-custom-field.code-editor-text',
+        {
+          language: 'typescript';
+        }
+      >;
+  };
+}
+
+export interface CodeBlocksTypescript extends Struct.ComponentSchema {
+  collectionName: 'components_code_blocks_typescripts';
+  info: {
+    displayName: 'Typescript';
+    icon: 'code';
+  };
+  attributes: {
+    caption: Schema.Attribute.String;
+    typescript: Schema.Attribute.Text &
+      Schema.Attribute.CustomField<
+        'plugin::strapi-code-editor-custom-field.code-editor-text',
+        {
+          language: 'typescript';
+        }
+      >;
+  };
+}
+
 export interface SharedBeforeAndAfterImageSlider
   extends Struct.ComponentSchema {
   collectionName: 'components_shared_before_and_after_image_sliders';
@@ -19,7 +73,7 @@ export interface SharedMedia extends Struct.ComponentSchema {
     icon: 'file-video';
   };
   attributes: {
-    file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+    file: Schema.Attribute.Media<'images' | 'videos'>;
   };
 }
 
@@ -77,6 +131,9 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'code-blocks.docker': CodeBlocksDocker;
+      'code-blocks.javascript': CodeBlocksJavascript;
+      'code-blocks.typescript': CodeBlocksTypescript;
       'shared.before-and-after-image-slider': SharedBeforeAndAfterImageSlider;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

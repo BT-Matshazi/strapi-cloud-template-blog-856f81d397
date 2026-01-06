@@ -480,7 +480,13 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   };
   attributes: {
     aboutTheProject: Schema.Attribute.DynamicZone<
-      ['shared.rich-text', 'shared.slider', 'shared.media']
+      [
+        'shared.rich-text',
+        'shared.slider',
+        'shared.media',
+        'code-blocks.typescript',
+        'code-blocks.javascript',
+      ]
     >;
     cardImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;

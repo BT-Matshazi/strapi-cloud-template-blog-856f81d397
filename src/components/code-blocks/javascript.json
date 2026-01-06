@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_code_blocks_javascripts",
+  "info": {
+    "displayName": "Javascript",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "javascript": {
+      "type": "customField",
+      "customField": "plugin::strapi-code-editor-custom-field.code-editor-text",
+      "options": {
+        "language": "typescript"
+      }
+    },
+    "caption": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

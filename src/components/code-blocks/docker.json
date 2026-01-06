@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_code_blocks_dockers",
+  "info": {
+    "displayName": "Docker",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "Docker": {
+      "type": "customField",
+      "customField": "plugin::strapi-code-editor-custom-field.code-editor-text",
+      "options": {
+        "language": "dockerfile"
+      }
+    },
+    "caption": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

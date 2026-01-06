@@ -50,7 +50,9 @@
       "components": [
         "shared.rich-text",
         "shared.slider",
-        "shared.media"
+        "shared.media",
+        "code-blocks.typescript",
+        "code-blocks.javascript"
       ]
     }
   }
