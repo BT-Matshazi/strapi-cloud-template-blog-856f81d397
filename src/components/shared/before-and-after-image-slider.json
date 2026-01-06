@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_before_and_after_image_sliders",
+  "info": {
+    "displayName": "BeforeAndAfterImageSlider"
+  },
+  "options": {},
+  "attributes": {
+    "beforeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "afterImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

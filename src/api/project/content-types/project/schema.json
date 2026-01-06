@@ -24,6 +24,34 @@
       "type": "integer",
       "required": true,
       "unique": true
+    },
+    "overview": {
+      "type": "text",
+      "required": true
+    },
+    "cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "aboutTheProject": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.rich-text",
+        "shared.slider",
+        "shared.media"
+      ]
     }
   }
 }
