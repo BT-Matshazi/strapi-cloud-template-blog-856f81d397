@@ -12,6 +12,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "vite-plugin-monaco-editor": "^1.1.0",
     "@strapi/plugin-cloud": "5.28.0",
     "@strapi/plugin-users-permissions": "5.28.0",
     "@strapi/strapi": "5.28.0",
@@ -24,11 +25,11 @@
     "strapi-code-editor-custom-field": "^1.1.0",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {
-    "vite-plugin-monaco-editor": "^1.1.0"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   }
 }
+
+
